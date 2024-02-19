@@ -1,0 +1,22 @@
+.bold-header {
+    font-weight: bold;
+    background-color: #AED2FF;
+    border: 1px solid blue;
+}
+
+.custom-header {
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #80B3FF;
+    border: 1px solid;
+    color: white;
+}
+
+.btn_hover:hover {
+    transform: translate(2px, 2px);
+}
+
+.btn_active:active {
+    transform: translate(5px, 5px);
+}
+
