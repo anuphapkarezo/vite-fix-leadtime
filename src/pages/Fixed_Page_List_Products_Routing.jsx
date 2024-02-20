@@ -66,6 +66,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
 };
 
   const columns = [
+    { field: 'RO_PRD_NAME', headerName: 'Product Name', width: 150 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
     { field: 'RO_SEQ', headerName: 'Seq', width: 100 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'center'},
     { field: 'FACTORY_DESC', headerName: 'Factory', width: 130 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'center'},
     { field: 'RO_PROC_ID', headerName: 'Process ID', width: 120 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
@@ -101,7 +102,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
             <div className="w-screen ml-20 mt-8" 
                 style={{
                     border: '1px solid black',
-                    width: 835,
+                    width: 990,
                     height: 50,
                     textAlign: 'center',
                     fontSize: 24,
@@ -120,7 +121,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
             </div>
 
             <div className="w-screen ml-20 mt-0" 
-                  style={{width:835 , height: 500}}>
+                  style={{width:990 , height: 500}}>
             {isLoading ? (
                 <CircularProgress /> // Display a loading spinner while data is being fetched
                   ) : (

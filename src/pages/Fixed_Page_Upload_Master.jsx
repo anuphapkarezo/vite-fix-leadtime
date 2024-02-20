@@ -65,6 +65,8 @@ export default function Fixed_Page_Upload_Master({ onSearch }) {
     reader.readAsText(file);
   };
 
+  // console.log('csv data' , csvData);
+
 
   const HandleSaveMaster = () => {
     const swalWithZIndex = Swal.mixin({
@@ -103,9 +105,14 @@ export default function Fixed_Page_Upload_Master({ onSearch }) {
                     }
                     const promises = csvData.map(async row => {
                       axios
-                            .get(
-                              `http://10.17.66.242:3001/api/smart_fixed/insert-data-master-product?product=${row[0]}&item=${row[1]}&productitem=${row[2]}&factory=${row[3]}&unit=${row[4]}&seq=${row[5]}&proc=${row[6]}&Day=${row[7]}`
-                            )
+                      .get(
+                        `http://10.17.66.242:3001/api/smart_fixed/insert-data-master-product?product=${encodeURIComponent(row[0])}&item=${encodeURIComponent(row[1])}&productitem=${encodeURIComponent(row[2])}&factory=${encodeURIComponent(row[3])}&unit=${encodeURIComponent(row[4])}&seq=${encodeURIComponent(row[5])}&proc=${encodeURIComponent(row[6])}&Day=${encodeURIComponent(row[7])}`
+                      )
+                      // console.log('row[6]' , row[6]);
+                      // axios
+                      //       .get(
+                      //         `http://10.17.66.242:3001/api/smart_fixed/insert-data-master-product?product=${row[0]}&item=${row[1]}&productitem=${row[2]}&factory=${row[3]}&unit=${row[4]}&seq=${row[5]}&proc=${row[6]}&Day=${row[7]}`
+                      //       )
                       // console.log('Insert OK');
                     });
 

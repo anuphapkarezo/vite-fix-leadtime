@@ -96,7 +96,7 @@ function Fixed_SearchMasterDayByProducts({ onSearch }) {
                         <Button 
                             variant="contained" 
                             // size="small"
-                            style={{width: '120px', height: '50px' , marginTop: '10px', marginLeft: 390}}
+                            style={{width: '120px', height: '50px' , marginTop: '10px', marginLeft: 540}}
                             onClick={handleSearch}
                             endIcon={<SearchIcon />}
                             >Search
