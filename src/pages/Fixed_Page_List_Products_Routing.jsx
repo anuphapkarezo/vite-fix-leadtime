@@ -71,7 +71,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
     { field: 'FACTORY_DESC', headerName: 'Factory', width: 130 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'center'},
     { field: 'RO_PROC_ID', headerName: 'Process ID', width: 120 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
     { field: 'PROC_DISP', headerName: 'Process', width: 130 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
-    { field: 'FAC_UNIT_CODE', headerName: 'Unit', width: 130 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
+    { field: 'FAC_UNIT_DESC', headerName: 'Unit', width: 130 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
     { field: 'ITEM_TYPE', headerName: 'Item', width: 100 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
     { field: 'RO_DAY', headerName: 'Day', width: 100 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'right'},
     // { field: 'update_date', headerName: 'Update', width: 150 , headerAlign: 'center' , headerClassName: 'bold-header' , align: 'left'},
