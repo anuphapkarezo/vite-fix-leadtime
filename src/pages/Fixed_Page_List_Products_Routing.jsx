@@ -88,7 +88,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
     <>
         <Navbar onToggle={handleNavbarToggle}/>
         <Box marginLeft={isNavbarOpen ? "220px" : 4} marginTop={8}>
-            <div className="w-screen ml-20 mt-20">
+            <Box mt={10} maxWidth="100%" display="flex" justifyContent="">
                 <div >
                     {/* <Smart_Scrap_SearchFactoryGroup onSearch={onSearch} /> */}
                     <Fixed_SearchMasterDayByProducts
@@ -97,9 +97,9 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
                         }}
                     />
                 </div>
-            </div>
+            </Box>
           
-            <div className="w-screen ml-20 mt-8" 
+            <Box mt={3} maxWidth="100%" display="flex" justifyContent="center"
                 style={{
                     border: '1px solid black',
                     width: 990,
@@ -118,9 +118,9 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
                     </p>
                 )}
                 
-            </div>
+            </Box>
 
-            <div className="w-screen ml-20 mt-0" 
+            <Box mt={3} maxWidth="100%" display="flex" justifyContent=""
                   style={{width:990 , height: 500}}>
             {isLoading ? (
                 <CircularProgress /> // Display a loading spinner while data is being fetched
@@ -141,7 +141,7 @@ export default function Fixed_Page_List_Products_Routing({ onSearch }) {
                       }
                     />
                   )}
-            </div>
+            </Box>
         </Box>
     </>
   );

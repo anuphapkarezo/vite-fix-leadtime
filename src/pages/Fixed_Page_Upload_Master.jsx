@@ -193,10 +193,11 @@ const columns = [
     <>
         <Navbar onToggle={handleNavbarToggle}/>
         <Box marginLeft={isNavbarOpen ? "220px" : 4} marginTop={8}>
-            <div className="w-screen ml-20 mt-20">
+            <Box mt={10} maxWidth="100%" display="flex" justifyContent="">
                 Please select file for upload
-            </div>
-            <div className="w-screen ml-20 mt-2" style={{display: 'inline-flex', alignItems: 'center'}}>
+            </Box>
+            <Box mt={0} maxWidth="100%" display="flex" justifyContent="" 
+                  style={{display: 'inline-flex', alignItems: 'center'}}>
                 <ReactFileReader handleFiles={handleFiles} fileTypes={'.csv'}>
                 <Button
                   className='btn_active'
@@ -218,12 +219,12 @@ const columns = [
                 <div>
                       <Button className='btn_hover' style={{fontWeight:'bold' , backgroundColor: '#74E291' , width: 150 , height: 50 , color: "black"}} onClick={HandleSaveMaster}>Upload File</Button>
                 </div>
-            </div>    
-            <div className="ml-20 mt-1">
+            </Box>    
+            <Box mt={1} maxWidth="100%" display="flex" justifyContent="" >
                 <a href="/FormatMasterFixLeadtime.csv" download="FormatMasterFixLeadtime.csv"
                 style={{textDecoration: 'underline', color: 'blue' }}>Format .csv file</a>
-            </div>
-            <div className="w-screen ml-20 mt-2" 
+            </Box>
+            <Box mt={1} maxWidth="100%" display="flex" justifyContent="" 
                   style={{width:835 , height: 530}}>
             {isLoading ? (
                 <CircularProgress /> // Display a loading spinner while data is being fetched
@@ -244,7 +245,7 @@ const columns = [
                       }
                     />
                   )}
-            </div>
+            </Box>
         </Box>
     </>
   );

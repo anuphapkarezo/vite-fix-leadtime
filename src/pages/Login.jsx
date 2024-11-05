@@ -88,7 +88,7 @@ function Login() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div className="login-container h-fit">
           <div className="title-container flex justify-center">
                 {/* <img
