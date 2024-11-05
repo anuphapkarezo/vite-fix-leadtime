@@ -297,7 +297,7 @@ return (
   <>
       <Navbar onToggle={handleNavbarToggle}/>
       <Box marginLeft={isNavbarOpen ? "220px" : 4} marginTop={8}>
-          <div className="w-screen ml-20 mt-0" style={{ display: 'flex', alignItems: 'center' }}>
+          <Box mt={1} maxWidth="100%" display="flex" justifyContent="" style={{ display: 'flex', alignItems: 'center' }}>
             <Autocomplete
                 disablePortal
                 // freeSolo
@@ -313,19 +313,21 @@ return (
                     option && value && option.product_name === value.product_name
                 }
             />
-          <div style={{fontSize: 16 , marginLeft: 10 , marginTop: 22 , width: 120 , color: 'red'}}>( Rev. {distinctRevision} )</div>
-          <div >
-              <Button 
-                  variant="contained" 
-                  // size="small"
-                  style={{width: '160px', height: '50px' , marginTop: 20 , marginLeft: 245 , backgroundColor: '#F57D1F'}}
-                  onClick={handleFixLeadtime}
-                  endIcon={<EventAvailableTwoToneIcon />}
-                  >Fix Leadtime
-              </Button>
-          </div>
-          </div>
-          <div className="w-screen ml-20 mt-2" 
+            <Box mt={1} maxWidth="100%" display="flex" justifyContent=""
+                style={{fontSize: 16 , marginLeft: 10 , marginTop: 22 , width: 120 , color: 'red'}}>( Rev. {distinctRevision} )
+            </Box>
+            <Box mt={1} maxWidth="100%" display="flex" justifyContent="" >
+                <Button 
+                    variant="contained" 
+                    // size="small"
+                    style={{width: '160px', height: '50px' , marginTop: 20 , marginLeft: 245 , backgroundColor: '#F57D1F'}}
+                    onClick={handleFixLeadtime}
+                    endIcon={<EventAvailableTwoToneIcon />}
+                    >Fix Leadtime
+                </Button>
+            </Box>
+          </Box>
+          <Box mt={1} maxWidth="100%" display="flex" justifyContent="" 
                   style={{width:785 , height: 560}}>
             {isLoading ? (
                 <CircularProgress /> // Display a loading spinner while data is being fetched
@@ -346,7 +348,7 @@ return (
                     }
                   />
                 )}
-          </div>
+          </Box>
           {/* <div className="w-screen ml-10 mt-2" style={{width: '2000px' , paddingBottom: '10px'}}>
             <table border="1" className="w-full">
                 <thead>
