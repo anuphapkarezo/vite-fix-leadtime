@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import WatchTwoToneIcon from '@mui/icons-material/WatchTwoTone';
 
 export default function Fixed_Page_List_Products_Routing({ onSearch }) {
+  const [error , setError] = useState(null);
+
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
